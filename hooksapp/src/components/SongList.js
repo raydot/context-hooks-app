@@ -15,7 +15,7 @@ const SongList = () => {
     setSongs([...songs, { title, id: uuid() }]); // Add everything in songs plus a new song
   };
 
-  // callback function that runs every time the component renders or rerenders
+  // callback function that runs every time the component renders or re-renders
   useEffect(() => {
     console.log('useEffect in effect:', songs);
   }, [songs]);
